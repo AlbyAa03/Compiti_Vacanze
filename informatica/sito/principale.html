@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inquinamento aria</title>
+    <link rel="stylesheet" href="./grafica.css">
+    <script src="./funzioni.js"></script>
+</head>
+
+<body >
+    <header id="headest">
+        <div id="sezione_header">
+            <h1 style="font-weight: 500">l'inquinamento dell'aria</h1>
+            <h2 style="font-weight: 400;">in varie citta</h2>
+        </div>
+    </header>
+    <input type="input" id="txtCitta" placeholder="città" style=" position: absolute;width: 15%;top: 65%;left: 10%;">
+    <div style="position: absolute;top: 65.5%;left: 35%;z-index: 2;">
+        <input type="checkbox" id="coordinates" name="coordinates">
+        <label for="coordinates">coordinate</label><br>
+
+        <input type="checkbox" id="valoriOggi" name="valoriOggi">
+        <label for="valoriOggi">valori odierni</label><br>
+
+        <input type="checkbox" id="valoriSettimana" name="valoriSettimana">
+        <label for="valoriSettimana">valori settimanali</label><br>
+
+        <input type="checkbox" id="valoriMediSettimana" name="valoriMediSettimana">
+        <label for="valoriMediSettimana">valori medi settimanali</label>
+    </div>
+    <input type="button" value="INVIO" onclick="stampaJSON()"
+        style=" position: absolute;width: 15%;top: 65%;right: 10%;z-index: 1;">
+
+    <div id="tabella"></div>
+    <div id="404"
+        style="position:relative;text-align: center;color: #fff;font-size: 6em;font-weight: bold;font-family: Helvetica;top:200px">
+    </div>
+    <div style="height: 100px;bottom: 0px;"></div>
+</body>
+
+</html>
